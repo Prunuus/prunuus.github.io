@@ -187,33 +187,6 @@ h2 {
   100% { opacity: 0; }
 }
 
-
-footer {
-  background-color: rgb(34, 37, 49);
-  width: 100vw;
-  height: 80px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  box-shadow: 0 0 10px black;
-}
-
-
-
-#copyright {
-  color: rgb(215, 218, 229);
-  position: absolute;
-  top: 55%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-
-#copyright p {
-  color: rgb(215, 218, 229);
-}
-
 .button {
   background-image: url("img/cat.png");
   background-size: cover;
@@ -358,6 +331,9 @@ nav {
 }
 
 @media screen and (max-width: 770px) {
+  #mission-section {
+    height: 750px;
+  }
   .mission-img {
     height:150px;
   }
@@ -410,18 +386,6 @@ nav {
   font-size: 20px;
 }
 
-@media screen and (max-width: 770px) {
-  #skills-section {
-      height: 75vh;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  #skills-section {
-    height: 1000px;
-}
-}
-
 .status {
   width: 200px;
   height: 100px;
@@ -432,7 +396,7 @@ nav {
 
 #contact-section {
   background-color:#34435E;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   padding-top: 100px;
   text-align:center;
@@ -465,4 +429,50 @@ nav {
 #about-target, #skills-target, #contact-target {
   position: relative;
   top: -250px;
+}
+
+
+#footer-section {
+  width: 100vw;
+}
+
+footer {
+  background-color: rgb(34, 37, 49);
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 0 10px black;
+}
+
+
+
+#copyright {
+  color: rgb(215, 218, 229);
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+#copyright p {
+  color: rgb(215, 218, 229);
+}
+
+@media screen and (max-width: 770px) {
+  #skills-section {
+      height: 75vh;
+  }
+  #contact-section {
+    height: 1000px;
+}
+}
+
+@media screen and (max-width: 580px) {
+  #skills-section {
+    height: 1000px;
+}
 }
